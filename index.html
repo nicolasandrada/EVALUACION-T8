@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Maderas Gunter</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">¿Quienes somos?</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Venta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="">
+            <div>
+                <h3>Nombre</h3>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div>
+                <h3>Tipo de Cliente</h3>
+                <select name="tipo" id="tipo">
+                    <option value="Consumidor Final">Consumidor Final</option>
+                    <option value="Responzable Inscripto">Responzable Inscripto</option>
+                    <option value="Monotibutriste">Monotibutriste</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Zona</h3>
+                <select name="zona" id="zona">
+                    <option value="Buenos Aires Centro">Buenos Aires Centro</option>
+                    <option value="Buenos Aires Sur">Buenos Aires Sur</option>
+                    <option value="Interior Sur">Interior Sur</option>
+                    <option value="Interior Norte">Interior Norte</option>
+                    <option value="Interior Este">Interior Este</option>
+                </select>
+            </div>
+
+            <div class="Maderas">
+                <h3>Pedido de maderas</h3>
+                <label for="algarrobo">Algarrobo</label>
+                <input type="number" name="madera[]" id="algarrobo">
+                <label for="pino">Pino</label>
+                <input type="number" name="madera[]" id="pino">
+                <label for="acacia">Acacia</label>
+                <input type="number" name="madera[]" id="acacia">
+            </div>
+
+            <div>
+                <input type="button" value="Calcular" id="calcular">
+            </div>
+
+        </form>   
+
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
