@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div>
+            <h1>Maderas Gunter</h1>
+        </div>
+
+        <nav>
+            <div class="right-aligned">
+            <ul class="menu-list">
+                <span></span><li class="menu-item"><a href="">¿Quienes somos?</a></li>
+                <span></span><li class="menu-item"><a href="">Contacto</a></li>
+                <span></span><li class="menu-item"><a href="">Venta</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <form action="">
+            
+            <div class="container">
+               <div class="center">
+                <u><h2>Nombre</h2></u>
+                <input type="text" name="nombre" id="nombre">
+               </div>
+
+            <div class="center">
+                <u><h2>Tipo de Cliente</h2></u>
+                <select name="tipo" id="tipo">
+                    <option value="Consumidor Final">Consumidor Final</option>
+                    <option value="Responzable Inscripto">Responzable Inscripto</option>
+                    <option value="Monotibutriste">Monotibutriste</option>
+                </select>
+            </div>
+
+            <div class="center">
+               <u><h2>Zona</h2></u>
+                <select name="zona" id="zona">
+                    <option value="Buenos Aires Centro">Buenos Aires Centro</option>
+                    <option value="Buenos Aires Sur">Buenos Aires Sur</option>
+                    <option value="Interior Sur">Interior Sur</option>
+                    <option value="Interior Norte">Interior Norte</option>
+                    <option value="Interior Este">Interior Este</option>
+                </select>
+            </div>
+
+            <div class="center">
+                <u><h2>Pedido de maderas</h2></u>
+                <label for="algarrobo">Algarrobo</label>
+                <input type="number" name="madera[]" id="algarrobo">
+                <label for="pino">Pino</label>
+                <input type="number" name="madera[]" id="pino">
+                <label for="acacia">Acacia</label>
+                <input type="number" name="madera[]" id="acacia">
+            </div>
+
+            <div class="boton">
+                <input type="button" value="Calcular" id="calcular" class="boton-calcular">
+            </div>
+           </div>
+
+        </form>  
+ 
+
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
